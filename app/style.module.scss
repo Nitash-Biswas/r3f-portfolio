@@ -1,0 +1,58 @@
+.burger {
+  width: 100%;
+
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    width: 45%;
+    background-color: white;
+    height: 2px;
+    margin: auto;
+    position: relative;
+    z-index: 40;
+  }
+
+  &::after {
+    top: -5px;
+    transition: all 0.3s ease;
+  }
+  &::before {
+    top: 5px;
+    transition: all 0.3s ease;
+  }
+}
+
+.burgerActive {
+  &::after {
+    top: -1px;
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+  }
+  &::before {
+    top: 1px;
+    transform: rotate(-45deg);
+    transition: all 0.3s ease;
+  }
+}
+
+.svgCurve {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  left: -100px;
+  fill: #1b1b1b;
+  stroke: none;
+}
+
+.main{
+  height: 60vw;
+  background-color: #0f0f0f;
+  margin-top: 100vh;
+  margin-bottom: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
