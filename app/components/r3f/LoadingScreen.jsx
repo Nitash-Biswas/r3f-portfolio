@@ -17,7 +17,7 @@ const LoadingScreen = ({ started, onStarted }) => {
       <div className={load.loadingScreen__board}>
         <h1 className={load.loadingScreen__title}>Get Ready !!!</h1>
         <Image
-          src="/images/LoadingScreenCard.png"
+          src="images/LoadingScreenCard.png"
           alt="About image"
           width={500}
           height={400}
