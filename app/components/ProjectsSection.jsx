@@ -7,10 +7,10 @@ import { animate, motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "SenkoVerse AudioChat System",
-    imgUrl: "/images/projects/Senko.png",
+    title: "Composite Cloud Service Selection",
+    imgUrl: "images/projects/Cloud.png",
     description:
-      "[ Internship ] A proximity-based audio chat system for implementation in online multiplayer platforms using Three.js, React, and WebRTC.",
+      "A dynamic and scalable composite cloud service selection model powered by Ant Colony Optimization (ACO).",
     tag: ["All", "Dev"],
     gitUrl: "/",
     previewUrl: "/",
@@ -18,9 +18,9 @@ const projectsData = [
   {
     id: 2,
     title: "Jobs Daily",
-    imgUrl: "/images/projects/JobsDaily.png",
+    imgUrl: "images/projects/JobsDaily.png",
     description:
-      "App to search and apply for popular and nearby jobs. Built on React Native, for efficient cross-platform development, ensuring a seamless user experience on both iOS and Android. ",
+      "App to search and apply for popular and nearby jobs. Built on React Native, for efficient cross-platform development. ",
     tag: ["All", "Dev"],
     gitUrl: "https://github.com/Nitash-Biswas/ReactNative_JobApp",
     previewUrl: "/",
@@ -28,7 +28,7 @@ const projectsData = [
   {
     id: 3,
     title: "Asteroid Master",
-    imgUrl: "/images/projects/Asteroid.png",
+    imgUrl: "images/projects/Asteroid.png",
     description:
       "An Old Atari Classic Asteroid clone made using c++",
     tag: ["All", "Design"],

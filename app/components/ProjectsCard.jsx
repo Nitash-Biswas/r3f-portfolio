@@ -13,7 +13,7 @@ const ProjectsCard = ({
   return (
     <div className="bg-[#201f1f] rounded-xl">
       <div
-        className="h-52 md:h-72 rounded-t-xl relative group"
+        className="h-52 md:h-72 rounded-t-xl relative group pointer-events-auto"
         style={{
           background: `url(${imgUrl})`,
           backgroundSize: "cover",

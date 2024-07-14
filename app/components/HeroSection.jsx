@@ -6,12 +6,12 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
 
-      <div className="grid grid-cols-1 sm:grid-cols-12 z-50 w-full md:h-screen">
+      <div className="grid grid-cols-1 sm:grid-cols-12 z-50 w-full h-screen">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-7 place-self-center text-center sm:text-left"
+          className="col-span-7 md:place-self-center text-center sm:text-left"
         >
           <h1 className="text-white mb-4 text-5xl md:text-7xl font-extrabold">
             {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-blue-600">
