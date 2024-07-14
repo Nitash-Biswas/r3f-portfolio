@@ -12,7 +12,7 @@ const projectsData = [
     description:
       "A dynamic and scalable composite cloud service selection model powered by Ant Colony Optimization (ACO).",
     tag: ["All", "Dev"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Nitash-Biswas/Composite-Cloud-Service-Selection",
     previewUrl: "/",
   },
   {
