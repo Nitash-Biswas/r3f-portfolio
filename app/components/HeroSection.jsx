@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
 
-      <div className="grid grid-cols-1 sm:grid-cols-12 z-50 w-full h-screen">
+      <div className="grid grid-cols-1 sm:grid-cols-12 z-50 w-full h-screen" id="hero">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

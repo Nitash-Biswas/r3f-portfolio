@@ -30,7 +30,7 @@ const NavBar = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent">
         <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-3 pb-4 md:p-8 md:pb-4">
           <Link
-            href={"/"}
+            href={"#hero"}
             className="text-2xl md:text-5xl text-white hover:text-[#ADB7BE] font-semibold "
           >
             Nb.
