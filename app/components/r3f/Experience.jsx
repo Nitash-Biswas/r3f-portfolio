@@ -14,7 +14,7 @@ import CharacterController from "./CharacterController";
 const maps = {
   castle_on_hills: {
     scale: 3,
-    position: [-6, -7, 0],
+    position: [-6, -8, 0],
   },
   animal_crossing_map: {
     scale: 20,
