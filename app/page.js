@@ -20,7 +20,7 @@ const keyboardMap = [
   { name: "run", keys: ["Shift"] },
 ];
 export default function Home() {
-  const [start, setStart] = useState(true);
+  const [start, setStart] = useState(false);
   const appVisibility = start ? "visible" : "hidden";
   return (
     <>
