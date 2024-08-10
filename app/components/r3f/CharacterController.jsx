@@ -69,12 +69,12 @@ const CharacterController = () => {
     document.addEventListener("mouseup", onMouseUp);
     //TOUCH
     document.addEventListener("touchstart", onMouseDown);
-    document.addEventListener("touchend",onMouseUp)
+    document.addEventListener("touchend", onMouseUp);
     return () => {
       document.removeEventListener("mousedown", onMouseDown);
       document.removeEventListener("mouseup", onMouseUp);
       document.removeEventListener("touchstart", onMouseDown);
-    document.removeEventListener("touchend",onMouseUp)
+      document.removeEventListener("touchend", onMouseUp);
     };
   }, []);
 
@@ -105,14 +105,14 @@ const CharacterController = () => {
       let speed = get().run ? RUN_SPEED : WALK_SPEED;
 
       if (isClicking.current) {
-        console.log("clicking", mouse.x, mouse.y);
-        if(Math.abs(mouse.x)>0.1){
-            movement.x = -mouse.x;
+        // console.log("clicking", mouse.x, mouse.y);
+        if (Math.abs(mouse.x) > 0.1) {
+          movement.x = -mouse.x;
         }
 
-        movement.z = mouse.y+0.4;
-        if(Math.abs(movement.x)>0.5||Math.abs(movement.z)>0.5){
-            speed = RUN_SPEED;
+        movement.z = mouse.y + 0.4;
+        if (Math.abs(movement.x) > 0.5 || Math.abs(movement.z) > 0.5) {
+          speed = RUN_SPEED;
         }
       }
 
@@ -161,6 +161,17 @@ const CharacterController = () => {
       camera.lookAt(cameraLookAt.current);
     }
   });
+
+  //FALL DETECTION AND POSITION RESET
+  if (rb.current) {
+    const containerWorldPosition = new Vector3();
+    container.current.getWorldPosition(containerWorldPosition);
+    // console.log(containerWorldPosition.x);
+
+    if (containerWorldPosition.y < -10) {
+      rb.current.setTranslation({ x: 0, y: 0, z: 0 });
+    }
+  }
 
   return (
     <RigidBody colliders={false} lockRotations ref={rb}>

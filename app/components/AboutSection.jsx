@@ -9,10 +9,10 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li><span class="text-2xl mr-2">Languages:</span>C++, C#, Python, JavaScript, Typescript</li>
-        <li><span class="text-2xl mr-2">Web Dev:</span>React, Next.js, Three.js, Node.js</li>
-        <li><span class="text-2xl mr-2">Game Dev:</span>Unity, Unreal Engine</li>
-        <li><span class="text-2xl mr-2">Design:</span>Adobe Suite, Figma, Blender, DaVinci Resolve</li>
+        <li><span className="text-2xl mr-2">Languages:</span>C++, C#, Python, JavaScript, Typescript</li>
+        <li><span className="text-2xl mr-2">Web Dev:</span>React, Next.js, Three.js, Node.js</li>
+        <li><span className="text-2xl mr-2">Game Dev:</span>Unity, Unreal Engine</li>
+        <li><span className="text-2xl mr-2">Design:</span>Adobe Suite, Figma, Blender, DaVinci Resolve</li>
       </ul>
     ),
   },

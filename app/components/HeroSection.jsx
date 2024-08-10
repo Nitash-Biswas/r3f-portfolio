@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
 
-      <div className="grid grid-cols-1 sm:grid-cols-12 z-50 w-full h-screen" id="hero">
+      <div className="grid grid-cols-1 sm:grid-cols-12 z-50 w-full h-screen pt-24" id="hero">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -42,11 +42,14 @@ const HeroSection = () => {
             Welcome to my portfolio . Hope you like it .
           </p>
           <div className="pointer-events-auto">
-            <button className="px-1 py-1 w-[300px] rounded-full bg-orange-400 hover:bg-orange-500  text-white">
+            <a href="https://drive.google.com/file/d/1xjNvk_2_Hb3bzFo0U69GWacJcdaBzvKW/view?usp=sharing" target="_blank" >
+            <button className="px-1 py-1 w-[300px] rounded-full bg-orange-400 hover:bg-orange-500  text-white"
+            >
               <span className="block rounded-full px-5 py-2">
                 Download CV
               </span>
             </button>
+            </a>
           </div>
         </motion.div>
 

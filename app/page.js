@@ -20,11 +20,11 @@ const keyboardMap = [
   { name: "run", keys: ["Shift"] },
 ];
 export default function Home() {
-  const [start, setStart] = useState(false);
+  const [start, setStart] = useState(true);
   const appVisibility = start ? "visible" : "hidden";
   return (
     <>
-      <main className="h-screen min-h-screen container w-screen">
+      <main className="h-screen min-h-screen container w-screen overflow-x-hidden">
         <div className={`${appVisibility}`}>
           <NavBar />
           <div className="absolute w-full z-10 py-4 px-12 mt-20 md:mt-0 pointer-events-none">
